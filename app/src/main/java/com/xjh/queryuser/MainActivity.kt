@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.xjh.queryuser.mvc.MVCActivity
+import com.xjh.queryuser.mvp.MVPActivity
+import com.xjh.queryuser.mvvm.MVVMActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun initView() {
         noModel.setOnClickListener(this)
         mvc.setOnClickListener(this)
+        mvp.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -29,6 +32,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.mvc -> {
                     val intent = Intent(this, MVCActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.mvp -> {
+                    val intent = Intent(this, MVPActivity::class.java)
                     startActivity(intent)
                 }
             }
