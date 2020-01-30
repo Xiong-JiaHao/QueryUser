@@ -12,12 +12,14 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NormalActivity"></activity>
-        <activity android:name=".mvc.MVCActivity"></activity>
-        <activity android:name=".mvp.MVPActivity"></activity>
+        <activity android:name=".NormalActivity" />
+        <activity android:name=".mvc.MVCActivity" />
+        <activity android:name=".mvp.MVPActivity" />
+        <activity android:name=".mvvm.MVVMActivity" />
     </application>
 
 </manifest>
