@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         noModel.setOnClickListener(this)
         mvc.setOnClickListener(this)
         mvp.setOnClickListener(this)
+        mvvm.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -36,6 +37,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.mvp -> {
                     val intent = Intent(this, MVPActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.mvvm -> {
+                    val intent = Intent(this, MVVMActivity::class.java)
                     startActivity(intent)
                 }
             }
